@@ -1,0 +1,52 @@
+@import '../mixins/mixins';
+
+/* ==================  acknowledgments Part Start  ================== */
+#acknowledgments {
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+    }
+
+    .acknowledgments_content {
+        text-align: center;
+        h2 {
+            font-family: 'digital-serial-bold', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            color: #fff;
+            text-transform: uppercase;
+            padding-bottom: 30px
+        }
+        p{
+            @include text(18px,400,#eee);
+            line-height: 26px;
+        }
+        a{
+            padding: 7px 15px;
+            text-transform: uppercase;
+            @include text(18px,600,#fff);
+            background: rgba(26, 63, 97, 0.9);
+            border-radius: 25px;
+            @include transition();
+            margin-top: 20px;
+            &:hover{
+                background: $hover;
+            }
+        }
+    }
+}
+
+/* ==================  acknowledgments Part End  ================== */

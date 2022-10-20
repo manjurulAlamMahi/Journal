@@ -1,0 +1,32 @@
+@import "../mixins/mixins";
+/* ==================  Transnationalism Content Part Start  ================== */
+#transnationalism{
+    .transnationalism_text{
+        p{
+            @include text(16px,400,#666);
+            @include transition();
+            transform: scale(0.9);
+            span{
+                display: block;
+                padding-top: 20px;
+            }
+        }
+        a{
+            @include text(16px,600,$hover);
+            margin-top: 10px;
+            i{
+                color: #00a5c2;
+            }
+            &:hover{
+                    text-decoration: underline;
+            }
+        }
+        &:hover{
+            p{
+                transform: scale(1);
+                color: #333;
+            }
+        }
+    }
+}
+/* ==================  Transnationalism Content Part End  ================== */

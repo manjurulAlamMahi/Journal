@@ -1,0 +1,616 @@
+/* ==================  Font Part Start  ================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@font-face {
+  src: url(../font_digital_serial_bold/Digital-Serial-Bold.ttf);
+  font-family: "digital-serial-bold", sans-serif;
+}
+/* ==================  Common Part Start  ================== */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+}
+
+.common_head {
+  text-align: center;
+  padding: 15px 0;
+}
+.common_head h2 {
+  font-family: "digital-serial-bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* ==================  Common Part End  ================== */
+/* ============ Menu Fix Start ============= */
+.fix_nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #1a3f61 !important;
+  box-shadow: 0 2px 35px rgba(26, 63, 97, 0.5);
+  z-index: 99999;
+}
+.fix_nav .menu_part ul li a:hover {
+  background: #fff !important;
+  color: #1a3f61 !important;
+}
+.fix_nav .menu_part ul li a.active {
+  background: #fff !important;
+  color: #1a3f61 !important;
+}
+
+/* ============ Menu Fix End ============= */
+/* ============ BAck to top button css Start ============= */
+.backtotop {
+  position: fixed;
+  bottom: 30px;
+  right: 110px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1a3f61;
+  color: #fff;
+  font-size: 35px;
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+  display: none;
+}
+
+.fix_backtotop {
+  z-index: 9999;
+}
+
+/* ============ BAck to top button css End ============= */
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* ======================== Heading css Start =============================== */
+#heading_part .heading_left {
+  display: block;
+  flex-wrap: wrap;
+}
+#heading_part .heading_left .heading_title {
+  padding: 0 0 0 20px;
+  align-self: center;
+}
+#heading_part .heading_left .heading_title h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+#heading_part .heading_lang ul li {
+  position: relative;
+}
+#heading_part .heading_lang ul li a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#heading_part .heading_lang ul li a img {
+  margin-right: 5px;
+}
+#heading_part .heading_lang ul li a i {
+  font-size: 14px;
+  padding: 5px;
+}
+#heading_part .heading_lang ul li ul {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  display: none;
+  width: 200px;
+  padding: 20px 10px;
+  background: #fff;
+  z-index: 9;
+}
+#heading_part .heading_lang ul li ul li {
+  margin: 10px 0;
+}
+#heading_part .heading_lang ul li:hover > a {
+  color: #1a3f61;
+  text-decoration: underline;
+}
+#heading_part .heading_lang ul li:hover ul {
+  display: block;
+}
+
+/* ======================== Heading css End =============================== */
+#main_menu {
+  background: rgba(26, 63, 97, 0.75);
+}
+#main_menu .menu_part ul {
+  width: 100%;
+  justify-content: center;
+}
+#main_menu .menu_part ul li a {
+  line-height: 40px;
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#main_menu .menu_part ul li a:hover {
+  background: #1a3f61;
+}
+#main_menu .menu_part ul li a.active {
+  background: #1a3f61;
+}
+
+/* ==================  Return Part Start  ================== */
+#return .trailer_text h3 {
+  font-family: "digital-serial-bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+#return .trailer_text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  padding: 25px 0;
+  text-align: center;
+  line-height: 26px;
+}
+#return .history h3 {
+  font-family: "digital-serial-bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+}
+#return .history p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  padding: 25px 0;
+  line-height: 26px;
+  transform: scale(0.9);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#return .history p span {
+  display: block;
+  padding: 10px 0;
+}
+#return .history h6 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+}
+#return .history h6 a {
+  color: #1a3f61;
+  text-decoration: underline;
+}
+#return .history h6 i {
+  color: #d10000;
+}
+#return .history:hover p {
+  color: #333;
+  transform: scale(1);
+}
+
+/* ==================  Return Part End  ================== */
+/* ==================  transnational Part Start  ================== */
+#transnational .trailer_text h3 {
+  font-family: "digital-serial-bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+#transnational .trailer_text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  padding: 25px 0;
+  text-align: center;
+  line-height: 26px;
+}
+#transnational .landless_camp h3 {
+  font-family: "digital-serial-bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+}
+#transnational .landless_camp p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  padding: 25px 0;
+  line-height: 26px;
+  transform: scale(0.9);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#transnational .landless_camp p span {
+  display: block;
+  padding: 10px 0;
+}
+#transnational .landless_camp h6 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #333;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+}
+#transnational .landless_camp h6 a {
+  color: #1a3f61;
+  text-decoration: underline;
+}
+#transnational .landless_camp h6 i {
+  color: #d10000;
+}
+#transnational .landless_camp:hover p {
+  color: #333;
+  transform: scale(1);
+}
+
+/* ==================  transnational Part End  ================== */
+/* ==================  acknowledgments Part Start  ================== */
+#acknowledgments {
+  padding: 30px 0;
+  position: relative;
+  z-index: 1;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+#acknowledgments::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+#acknowledgments .acknowledgments_content {
+  text-align: center;
+}
+#acknowledgments .acknowledgments_content h2 {
+  font-family: "digital-serial-bold", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+#acknowledgments .acknowledgments_content p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #eee;
+  line-height: 26px;
+}
+#acknowledgments .acknowledgments_content a {
+  padding: 7px 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(26, 63, 97, 0.9);
+  border-radius: 25px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  margin-top: 20px;
+}
+#acknowledgments .acknowledgments_content a:hover {
+  background: #1a3f61;
+}
+
+/* ==================  acknowledgments Part End  ================== */
+/* ==================  Footer Part Start  ================== */
+#footer .common_head h2 {
+  color: #fff;
+}
+#footer .common_head p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 0;
+}
+#footer form label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 0;
+}
+#footer form input {
+  padding: 10px;
+  width: 100%;
+}
+#footer form textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+}
+#footer form button {
+  border: none;
+  background: #1a3f61;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-align: center;
+}
+#footer .copy_right {
+  text-align: center;
+  padding-top: 10px;
+}
+#footer .copy_right p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ==================  Footer Part End  ================== */
+/* ==================  Brasiguaio Content Part Start  ================== */
+#brasiguaio .brasiguaio_text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transform: scale(0.9);
+}
+#brasiguaio .brasiguaio_text p span {
+  display: block;
+  padding-top: 20px;
+}
+#brasiguaio .brasiguaio_text:hover p {
+  transform: scale(1);
+  color: #333;
+}
+
+/* ==================  Brasiguaio Content Part End  ================== */
+/* ==================  Transnationalism Content Part Start  ================== */
+#transnationalism .transnationalism_text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #666;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transform: scale(0.9);
+}
+#transnationalism .transnationalism_text p span {
+  display: block;
+  padding-top: 20px;
+}
+#transnationalism .transnationalism_text a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a3f61;
+  margin-top: 10px;
+}
+#transnationalism .transnationalism_text a i {
+  color: #00a5c2;
+}
+#transnationalism .transnationalism_text a:hover {
+  text-decoration: underline;
+}
+#transnationalism .transnationalism_text:hover p {
+  transform: scale(1);
+  color: #333;
+}
+
+/* ==================  Transnationalism Content Part End  ================== */
+/* ==================  Credit Part Start  ================== */
+#credit .common_head p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  padding: 15px 60px;
+}
+#credit .credit_content {
+  text-align: center;
+}
+#credit .credit_content ul li h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  font-family: "digital-serial-bold", sans-serif;
+  padding: 10px 0;
+}
+#credit .credit_content ul li h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #666;
+  padding: 10px 0;
+}
+#credit .credit_content ul li p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  padding: 7px 0;
+}
+
+/* ==================  Credit Part End  ================== */
+/* ============================= Producer Part Start ================================= */
+#producer .producer_part .producer_img {
+  padding-bottom: 30px;
+}
+#producer .producer_part .producer_img img {
+  border-radius: 50%;
+}
+#producer .producer_part .producer_txt {
+  background: #1a3f61;
+  padding: 20px;
+  position: relative;
+  border-radius: 5px;
+}
+#producer .producer_part .producer_txt .shape_testi {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  border-bottom: 25px solid #1a3f61;
+  border-top: 25px solid transparent;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  transform: translateX(-50%);
+}
+#producer .producer_part .producer_txt h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 5px;
+}
+#producer .producer_part .producer_txt h4 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* ============================= Producer Part End ================================= */
+/* ==================  Festivals and Awards Part Start  ================== */
+#festivals_awards .common_head p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  padding-top: 10px;
+}
+#festivals_awards .award_part {
+  width: 100%;
+  position: relative;
+}
+#festivals_awards .award_part h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a3f61;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 25px;
+}
+#festivals_awards .award_part ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#festivals_awards .award_part ul li {
+  width: 22.22%;
+  height: 200px;
+  margin: 0 15px;
+}
+#festivals_awards .award_part ul li img {
+  max-width: 100%;
+  width: 100%;
+}
+#festivals_awards .award_part .award_next,
+#festivals_awards .award_part .award_prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #1a3f61;
+  font-size: 25px;
+  z-index: 9;
+}
+#festivals_awards .award_part .award_next {
+  right: -10px;
+}
+#festivals_awards .award_part .award_prev {
+  left: -10px;
+}
+
+/* ==================  Festivals and Awards Part End  ================== *//*# sourceMappingURL=style.css.map */

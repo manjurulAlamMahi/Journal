@@ -1,0 +1,83 @@
+/* ==================  Font Part Start  ================== */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+@font-face {
+    src: url(../font_digital_serial_bold/Digital-Serial-Bold.ttf);
+    font-family: 'digital-serial-bold', sans-serif;
+}
+
+/* ==================  Common Part Start  ================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+body::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.container{
+    background: #fff;
+    padding: 20px 30px;
+}
+
+.common_head {
+    text-align: center;
+    padding: 15px 0;
+
+    h2 {
+        font-family: 'digital-serial-bold', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #333;
+        text-transform: uppercase;
+    }
+}
+
+
+/* ==================  Common Part End  ================== */

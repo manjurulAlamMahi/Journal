@@ -1,0 +1,22 @@
+@import "../mixins/mixins";
+/* ==================  Brasiguaio Content Part Start  ================== */
+#brasiguaio{
+    .brasiguaio_text{
+        p{
+            @include text(16px,400,#666);
+            @include transition();
+            transform: scale(0.9);
+            span{
+                display: block;
+                padding-top: 20px;
+            }
+        }
+        &:hover{
+            p{
+                transform: scale(1);
+                color: #333;
+            }
+        }
+    }
+}
+/* ==================  Brasiguaio Content Part End  ================== */

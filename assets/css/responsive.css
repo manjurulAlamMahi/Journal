@@ -1,0 +1,245 @@
+@media(min-width:1400px) {}
+
+@media(min-width:1200px) and (max-width:1399.98px) {}
+
+@media(min-width:992px) and (max-width:1100.98px) {
+    #heading_part .heading_left .heading_title h1 {
+        font-size: 18px;
+    }
+    .backtotop {
+        right: 20px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991.98px) {
+    /* ====================== Header Part Start ======================== */
+    #heading_part .heading_left .heading_logo img {
+        width: 60px;
+        height: 60px;
+    }
+    #heading_part .heading_left .heading_logo {
+        width: 10%;
+    }
+    #heading_part .heading_left .heading_title {
+        width: 90%;
+    }
+    #heading_part .heading_left .heading_title h1 {
+        padding-left: 10px;
+    }
+    /* ====================== Header Part End ======================== */
+
+    /* ====================== Navigation Part Start ======================== */
+    #main_menu .menu_part ul li a {
+        font-size: 13px;
+    }
+    /* ====================== Navigation Part End ======================== */
+    .backtotop {
+        right: 30px;
+    }
+}
+
+@media(min-width:576px) and (max-width:767.98px) {
+
+    /* Common Css */
+    .container {
+        padding: 10px 20px;
+    }
+
+    /* ====================== Header Part Start ======================== */
+    #heading_part .heading_left .heading_logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #heading_part .heading_left {
+        flex-wrap: nowrap;
+    }
+
+    #heading_part .heading_left .heading_logo {
+        width: 25%;
+    }
+
+    #heading_part .heading_left .heading_title {
+        width: 75%;
+    }
+
+    #heading_part .heading_left .heading_title {
+        width: 100%;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    #heading_part .heading_left .heading_title h1 {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 10s infinite linear;
+    }
+
+    #heading_part .heading_lang {
+        text-align: right;
+        transform: translateY(50px);
+        position: relative;
+        z-index: 99999;
+        display: inline-block;
+        float: right;
+    }
+
+    #heading_part .heading_lang ul li ul {
+        left: -5px;
+        width: 141px;
+        text-align: left;
+        background: #1a3f61;
+        top: 38px;
+    }
+
+    #heading_part .heading_lang ul li a {
+        color: #fff;
+    }
+
+    #heading_part .heading_lang ul li a:hover,
+    #heading_part .heading_lang ul li ul li a:hover {
+        color: #f1f1f1;
+    }
+
+    /* ====================== Header Part End ======================== */
+
+    /* ====================== Navigation Part Start ======================== */
+    #main_menu .navbar-toggler span {
+        color: #fff;
+    }
+
+    #main_menu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    #main_menu .menu_part ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #main_menu .menu_part ul li a:hover,
+    #main_menu .menu_part ul li a.active {
+        background: #fff;
+        color: #1a3f61;
+    }
+
+    /* ====================== Navigation Part End ======================== */
+
+    /* ====================== transnationalism Part Start ======================== */
+    
+    #transnationalism .transnationalism_text_icon img{
+        width: 100%;
+        max-width: 100%;
+        align-self: center;
+    }
+    /* ====================== transnationalism Part End ======================== */
+    .backtotop {
+        right: 5px;
+    }
+}
+
+@media(max-width:575.98px) {
+
+    /* Common Css */
+    .container {
+        padding: 10px 20px;
+    }
+
+    /* ====================== Header Part Start ======================== */
+    #heading_part .heading_left .heading_logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #heading_part .heading_left {
+        flex-wrap: nowrap;
+    }
+
+    #heading_part .heading_left .heading_logo {
+        width: 25%;
+    }
+
+    #heading_part .heading_left .heading_title {
+        width: 75%;
+    }
+
+    #heading_part .heading_left .heading_title {
+        width: 100%;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        padding: 0;
+        margin-left: 15px;
+    }
+
+    #heading_part .heading_left .heading_title h1 {
+        display: inline-block;
+        padding-left: 100%;
+        animation: marquee 10s infinite linear;
+    }
+
+    #heading_part .heading_lang {
+        text-align: right;
+        transform: translateY(50px);
+        position: relative;
+        z-index: 99999;
+        display: inline-block;
+        float: right;
+    }
+
+    #heading_part .heading_lang ul li ul {
+        left: -5px;
+        width: 141px;
+        text-align: left;
+        background: #1a3f61;
+        top: 38px;
+    }
+
+    #heading_part .heading_lang ul li a {
+        color: #fff;
+    }
+
+    #heading_part .heading_lang ul li a:hover,
+    #heading_part .heading_lang ul li ul li a:hover {
+        color: #f1f1f1;
+    }
+
+    /* ====================== Header Part End ======================== */
+
+    /* ====================== Navigation Part Start ======================== */
+    #main_menu .navbar-toggler span {
+        color: #fff;
+    }
+
+    #main_menu .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    #main_menu .menu_part ul {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    #main_menu .menu_part ul li a:hover,
+    #main_menu .menu_part ul li a.active {
+        background: #fff;
+        color: #1a3f61;
+    }
+
+    /* ====================== Navigation Part End ======================== */
+
+    /* ====================== transnationalism Part Start ======================== */
+    
+    #transnationalism .transnationalism_text_icon img{
+        width: 100%;
+        max-width: 100%;
+        align-self: center;
+    }
+    /* ====================== transnationalism Part End ======================== */
+    .backtotop {
+        right: 5px;
+    }
+}

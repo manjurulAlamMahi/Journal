@@ -1,0 +1,36 @@
+@import '../mixins/mixins';
+/* ============================= Producer Part Start ================================= */
+#producer{
+    .producer_part{
+        .producer_img{
+            padding-bottom: 30px;
+            img{
+                border-radius: 50%;
+            }
+        }
+        .producer_txt{
+            background: $hover;
+            padding: 20px;
+            position: relative;
+            border-radius: 5px;
+            .shape_testi{
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                border-bottom: 25px solid $hover;
+                border-top: 25px solid transparent;
+                border-left: 25px solid transparent;
+                border-right: 25px solid transparent;
+                transform: translateX(-50%);
+            }
+            h2{
+                @include text(20px, 600, #fff);
+                padding-bottom: 5px;
+            }
+            h4{
+                @include text(16px, 300, #fff);
+            }
+        }
+    }
+}
+/* ============================= Producer Part End ================================= */

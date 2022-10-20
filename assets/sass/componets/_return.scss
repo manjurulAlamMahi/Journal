@@ -1,0 +1,65 @@
+@import '../mixins/mixins';
+/* ==================  Return Part Start  ================== */
+#return{
+    .trailer_text{
+        h3{
+            font-family: 'digital-serial-bold', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: #333;
+        text-transform: uppercase;
+        font-style: italic;
+        text-align: center;
+        }
+        p{
+            @include text(16px,400,#666);
+            padding: 25px 0;
+            text-align: center;
+            line-height: 26px;
+        }
+    }
+    .history{
+        h3{
+            font-family: 'digital-serial-bold', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+            color: #333;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 15px 0;
+        }
+        p{
+            @include text(16px,400,#666);
+            padding: 25px 0;
+            line-height: 26px;
+            transform: scale(0.9);
+            @include transition();
+            span{
+                display: block;
+                padding: 10px 0;
+            }
+        }
+        h6{
+            font-weight: 700;
+            font-size: 18px;
+            color: #333;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 15px 0;
+            a{
+                color: $hover;
+                text-decoration: underline;
+            }
+            i{
+                color: #d10000;
+            }
+        }
+        &:hover{
+            p{
+                color: #333;
+                transform: scale(1);
+            }
+        }
+    }
+}
+/* ==================  Return Part End  ================== */

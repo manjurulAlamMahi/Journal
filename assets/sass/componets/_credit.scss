@@ -1,0 +1,31 @@
+@import '../mixins/mixins';
+/* ==================  Credit Part Start  ================== */
+#credit{
+    .common_head{
+        p{
+            @include text(15px,400,#333);
+            padding: 15px 60px;
+        }
+    }
+    .credit_content{
+        text-align: center;
+        ul{
+            li{
+                h3{
+                    @include text(18px,700,#333);
+                    font-family: 'digital-serial-bold', sans-serif;
+                    padding: 10px 0;
+                }
+                h4{
+                    @include text(16px,700,#666);
+                    padding: 10px 0;
+                }
+                p{
+                    @include text(14px,400,#666);
+                    padding: 7px 0;
+                }
+            }
+        }
+    }
+}
+/* ==================  Credit Part End  ================== */

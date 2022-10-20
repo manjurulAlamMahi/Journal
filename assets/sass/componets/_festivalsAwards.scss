@@ -1,0 +1,51 @@
+@import '../mixins/mixins';
+/* ==================  Festivals and Awards Part Start  ================== */
+#festivals_awards{
+    .common_head{
+        p{
+            @include text(16px,500,#666);
+            padding-top: 10px;
+        }
+    }
+    .award_part{
+        width: 100%;
+        position: relative;
+        h3{
+            @include text(24px,600,$hover);
+            text-transform: uppercase;
+            font-style: italic;
+            text-align: center;
+            padding-bottom: 25px;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            li{
+                width: 22.22%;
+                height: 200px;
+                margin: 0 15px;
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        .award_next,
+        .award_prev{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: $hover;
+            font-size: 25px;
+            z-index: 9;
+        }
+        .award_next{
+            right: -10px;
+        }
+        .award_prev{
+            left: -10px;
+        }
+    }
+}
+/* ==================  Festivals and Awards Part End  ================== */

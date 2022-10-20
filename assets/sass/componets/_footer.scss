@@ -1,0 +1,162 @@
+@import '../mixins/mixins';
+/* ==================  Footer Part Start  ================== */
+#footer{
+    .contact-top{
+        .common_head{
+            a{
+                img{
+                    width: 150px;
+                    height: 80px;
+                }
+            }
+        }
+    }
+    .contact-body{
+        .common_head{
+            text-align: left;
+            h6{
+                display: inline-block;
+                @include text(18px,600,#fff);
+                padding: 10px 0;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    bottom: 8px;
+                    left: 1px;
+                    width: 80%;
+                    height: 2px;
+                    background: #fff;
+                }
+            }
+        }
+        .context{
+            ul{
+                li{
+                    @include text(14px,400,#fff);
+                    margin-bottom: 12px;
+                    i{
+                        color: #fff;
+                        font-size: 16px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .social_contact{
+                display: flex;
+                align-items: flex-end;
+                margin-top: 10px;
+                li{
+                    margin-right: 15px;
+                    a{
+                        i{
+                            color: #fff;
+                            font-size: 19px;
+                            @include transition();
+                        }
+                        &:hover{
+                            i{
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .context-nav{
+            ul{
+                li{
+                    i{
+                        color: $hover;
+                        font-size: 16px;
+                        margin-right: 5px;
+                    }
+                    a{
+                        @include text(14px,400,#fff);
+                        margin-bottom: 12px;
+                        @include transition();
+                        &:hover{
+                            color: $hover;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .statistic_info{
+            margin-top: 10px;
+            p{
+                @include text(13px,400,#fff);
+                line-height: 22px;
+                span{
+                    color: $hover;
+                    font-size: 14px;
+                    i{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        form{
+            input{
+                padding: 5px;
+                width: 100%;
+                padding: 5px 10px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: none;
+                &:focus{
+                    box-shadow: 0 0 0 .25rem $hover;
+                }
+            }
+            textarea{
+                width: 100%;
+                padding: 10px;
+                resize: none;
+                border-radius: 5px;
+                padding: 5px 10px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #212529;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: none;
+                &:focus{
+                    box-shadow: 0 0 0 .25rem $hover;
+                }
+            }
+            button{
+                border: 1px solid transparent;
+                background: $hover;
+                @include text(15px,600,#fff);
+                padding: 7px 12px;
+                border-radius: 25px;
+                text-transform: uppercase;
+                margin-top: 10px;
+                text-align: center;
+                float: right;
+                @include transition();
+                &:hover{
+                    color: $hover;
+                    background: #fff;
+                    border: 1px solid $hover;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    
+    .copy_right{
+        text-align: center;
+        padding-top: 10px;
+        p{
+            @include text(15px,600,#fff);
+        }
+    }
+}
+/* ==================  Footer Part End  ================== */
