@@ -5,7 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgb(0, 0, 0) !important;
     box-shadow: 0 2px 35px rgba(26, 63, 97, 0.5);
     z-index: 99999;
     .menu_part {
@@ -13,12 +13,11 @@
             li{
                 a{
                     &:hover{
-                        background: #fff !important;
                         color: $hover !important;
                     }
                     &.active{
-                        background: #fff !important;
                         color: $hover !important;
+                        transform: translateY(100%);
                     }
                 }
             }

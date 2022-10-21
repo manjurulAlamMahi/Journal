@@ -78,6 +78,48 @@ $(function () {
     }
   });
 
+  // Slider 
+
+
+
+$('.annousment_details_carousel').slick({
+    dots: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    asNavFor: '.annousment_details_carousel_nav'
+});
+$('.annousment_details_carousel_nav').slick({
+    dots: false,
+    arrows: false,
+    vertical: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    focusOnSelect: true,
+    verticalSwiping: true,
+    asNavFor: '.annousment_details_carousel',
+    responsive: [
+        {
+            breakpoint: 376,
+            settings: {
+                slidesToShow: 2
+            }
+        },
+        {
+            breakpoint: 426,
+            settings: {
+                slidesToShow: 3
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 4
+            }
+        }
+    ]
+});
 
 
 

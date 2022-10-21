@@ -1,0 +1,66 @@
+@import "../mixins/mixins";
+/* ==================  Transnationalism Content Part Start  ================== */
+#issues{
+   .current_vol{
+        text-align: center;
+        h3{
+            @include text(18px,500,#000);
+        }
+        p{
+            @include text(15px,400,#000);
+            span{
+                @include text(15px,400,#333);
+            }
+        }
+   }
+   .current_issues{
+    .isuues_item{
+        position: relative;
+        padding: 15px 0;
+        h4{
+            padding-bottom: 5px;
+            a{
+                @include text(20px,600,$hover);
+            }
+        }
+        span{
+            @include text(18px,400,#000);
+            a{
+                @include text(18px,400,$hover);
+                margin-bottom: 5px;
+                opacity: 80%;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        p{
+            padding-bottom: 10px;
+            @include text(16px,500,#333);
+        }
+        a{
+            img{
+                margin-right: 5px;
+            }
+            @include text(15px,700,#333);
+            margin-bottom: 5px;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: #000;
+            left: 0;
+            bottom: 0;
+            opacity: 20%;
+        }
+        &:last-child{
+            &::after{
+                display: none;
+            }
+        }
+    }
+   }
+}
+/* ==================  Transnationalism Content Part End  ================== */

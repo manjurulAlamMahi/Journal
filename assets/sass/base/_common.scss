@@ -69,6 +69,32 @@ body::after{
 .common_head {
     text-align: center;
     padding: 15px 0;
+    .animation_bar{
+        display: block;
+        background: $hover;
+        height: 3px;
+        width: 100px;
+        margin: 0 auto;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            height: 100%;
+            top: 0;
+            width: 4px;
+            right: 40%;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            height: 100%;
+            top: 0;
+            width: 4px;
+            left: 40%;
+        }
+    }
 
     h2 {
         font-family: 'digital-serial-bold', sans-serif;

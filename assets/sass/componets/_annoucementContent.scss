@@ -1,0 +1,114 @@
+@import "../mixins/mixins";
+/* ==================  Brasiguaio Content Part Start  ================== */
+#annoucement{
+    .annousment_details{
+        padding: 20px 0;
+        .annousment_details_carousel{
+            .slider_item{
+                h4{
+                    @include text(20px,600,#000);
+                    padding: 5px 0;
+                    text-transform: uppercase;
+                }
+                span{
+                    @include text(15px,400,#333);
+                    i{
+                        color: $hover;
+                        margin-right: 5px;
+                    }
+                }
+                h6{
+                    @include text(16px,500,rgba(0, 0, 0, 0.7));
+                    padding: 5px 0;
+                }
+                p{
+                    @include text(14px,400,#000);
+                    padding: 5px 40px 0 0;
+                    line-height: 24px;
+                }
+                a{
+                    @include text(16px,500,$hover);
+                    text-transform: uppercase;
+                    margin: 5px 0;
+                    i{
+                        @include transition();
+                    }
+                    &:hover{
+                        text-decoration: underline;
+                        i{
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            .slick-dots {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; 
+                justify-content: center;
+                li {
+                    margin: 0 10px;
+                    margin-top: 10px; 
+                    cursor: pointer; 
+                    button {
+                        font-size: 0;
+                        width: 20px;
+                        height: 3px;
+                        border: none;
+                        background: $hover;
+                        opacity: 50%;
+                        cursor: pointer; 
+                    }
+                    &.slick-active{
+                        button{
+                            background: $hover;
+                            opacity: 100%;
+                            -webkit-box-shadow: 0px 1px 47px 5px rgba(241, 0, 0, 0.85);
+                            box-shadow: 0px 1px 47px 5px rgba(241, 0, 0, 0.85);
+                            position: relative;
+                        }
+                    }
+                }
+            }
+        }
+        .annousment_details_carousel_nav{
+            cursor: pointer;
+            .slider_item{
+                margin-bottom: 12px;
+                position: relative;
+                h4{
+                    @include text(13px,600,#000);
+                    padding: 5px 0;
+                    text-transform: uppercase;
+                }
+                span{
+                    @include text(14px,400,#333);
+                    i{
+                        color: $hover;
+                        margin-right: 5px;
+                    }
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: 80%;
+                    height: 1px;
+                    bottom: -10px;
+                    left: 0px;
+                    background: #efefef;
+                }
+            }
+            .slick-list{
+                .slick-track{
+                    transform: translate3d(0px , 0px ,0px) !important;
+                    .slick-current{
+                        h4{
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==================  Brasiguaio Content Part End  ================== */
