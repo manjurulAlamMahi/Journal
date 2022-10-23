@@ -1,0 +1,16 @@
+@import "../mixins/mixins";
+/* ==================  Brasiguaio Content Part Start  ================== */
+#breadcrumb{
+    .breadcrumb{
+        li{
+            a{
+                @include text(16px,400,#111);
+                @include transition();
+                &:hover{
+                    color: $hover;
+                }
+            }
+        }
+    }
+}
+/* ==================  Brasiguaio Content Part End  ================== */

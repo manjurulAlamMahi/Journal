@@ -1,0 +1,79 @@
+@import '../mixins/mixins'; 
+
+/* ==================  Team  Content Part Start  ================== */
+#team{
+    .team_card{
+        .teamer_image{
+            position: relative;
+            overflow: hidden;
+            .ovrly{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 80px;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                transform: translateX(80px);
+                transition: all linear .3s;
+                ul{
+                    padding-top: 30px;
+                    li{
+                        text-align: center;
+                        a{
+                            font-size: 20px;
+                            color: #fff;
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            line-height: 40px;
+                            margin-bottom: 20px;
+                            transition: all linear .2s;
+                        }
+                    }
+                }
+            }
+        }
+        .teamer_info{
+            text-align: center;
+            h4{
+                @include text(18px,700,#333);
+                padding: 3px 0;
+            }
+            span{
+                @include text(14px,500,#333);
+                padding: 3px 0;
+                text-transform: uppercase;
+            }
+            p{
+                @include text(14px,400,#000);
+                padding: 3px 0;
+            }
+        }
+
+        &:hover{
+            box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+            .teamer_image{
+                .ovrly{
+                    transform: translateX(0px);
+                    ul{
+                        li{
+                            a:hover{
+                                background: $hover;
+                                border-color: $hover;
+                            }
+                        } 
+                    } 
+                }
+            }
+            .teamer_info{
+                h4{
+                    color: $hover;
+                }
+            }
+
+        }
+    }
+}
+
+/* ==================  Team  Content Part End  ================== */

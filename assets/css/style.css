@@ -507,351 +507,22 @@ body::after {
   color: #fff;
 }
 
-/* ==================  Return Part Start  ================== */
-#return .trailer_text h3 {
-  font-family: "digital-serial-bold", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #333;
-  text-transform: uppercase;
-  font-style: italic;
-  text-align: center;
-}
-#return .trailer_text p {
+/* ==================  Brasiguaio Content Part Start  ================== */
+#breadcrumb .breadcrumb li a {
   font-size: 16px;
   font-weight: 400;
-  color: #666;
-  padding: 25px 0;
-  text-align: center;
-  line-height: 26px;
-}
-#return .history h3 {
-  font-family: "digital-serial-bold", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #333;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 15px 0;
-}
-#return .history p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #666;
-  padding: 25px 0;
-  line-height: 26px;
-  transform: scale(0.9);
+  color: #111;
   transition: all linear 0.5s;
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
-#return .history p span {
-  display: block;
-  padding: 10px 0;
-}
-#return .history h6 {
-  font-weight: 700;
-  font-size: 18px;
-  color: #333;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 15px 0;
-}
-#return .history h6 a {
+#breadcrumb .breadcrumb li a:hover {
   color: #dc3545;
-  text-decoration: underline;
-}
-#return .history h6 i {
-  color: #d10000;
-}
-#return .history:hover p {
-  color: #333;
-  transform: scale(1);
 }
 
-/* ==================  Return Part End  ================== */
-/* ==================  transnational Part Start  ================== */
-#transnational .trailer_text h3 {
-  font-family: "digital-serial-bold", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #333;
-  text-transform: uppercase;
-  font-style: italic;
-  text-align: center;
-}
-#transnational .trailer_text p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #666;
-  padding: 25px 0;
-  text-align: center;
-  line-height: 26px;
-}
-#transnational .landless_camp h3 {
-  font-family: "digital-serial-bold", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #333;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 15px 0;
-}
-#transnational .landless_camp p {
-  font-size: 16px;
-  font-weight: 400;
-  color: #666;
-  padding: 25px 0;
-  line-height: 26px;
-  transform: scale(0.9);
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-}
-#transnational .landless_camp p span {
-  display: block;
-  padding: 10px 0;
-}
-#transnational .landless_camp h6 {
-  font-weight: 700;
-  font-size: 18px;
-  color: #333;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 15px 0;
-}
-#transnational .landless_camp h6 a {
-  color: #dc3545;
-  text-decoration: underline;
-}
-#transnational .landless_camp h6 i {
-  color: #d10000;
-}
-#transnational .landless_camp:hover p {
-  color: #333;
-  transform: scale(1);
-}
-
-/* ==================  transnational Part End  ================== */
-/* ==================  acknowledgments Part Start  ================== */
-#acknowledgments {
-  padding: 30px 0;
-  position: relative;
-  z-index: 1;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-#acknowledgments::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  z-index: -1;
-}
-#acknowledgments .acknowledgments_content {
-  text-align: center;
-}
-#acknowledgments .acknowledgments_content h2 {
-  font-family: "digital-serial-bold", sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  color: #fff;
-  text-transform: uppercase;
-  padding-bottom: 30px;
-}
-#acknowledgments .acknowledgments_content p {
-  font-size: 18px;
-  font-weight: 400;
-  color: #eee;
-  line-height: 26px;
-}
-#acknowledgments .acknowledgments_content a {
-  padding: 7px 15px;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  background: rgba(26, 63, 97, 0.9);
-  border-radius: 25px;
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-  margin-top: 20px;
-}
-#acknowledgments .acknowledgments_content a:hover {
-  background: #dc3545;
-}
-
-/* ==================  acknowledgments Part End  ================== */
-/* ==================  Footer Part Start  ================== */
-#footer .contact-top .common_head a img {
-  width: 150px;
-  height: 80px;
-}
-#footer .contact-body .common_head {
-  text-align: left;
-}
-#footer .contact-body .common_head h6 {
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 600;
-  color: #fff;
-  padding: 10px 0;
-  position: relative;
-}
-#footer .contact-body .common_head h6::after {
-  position: absolute;
-  content: "";
-  bottom: 8px;
-  left: 1px;
-  width: 80%;
-  height: 2px;
-  background: #fff;
-}
-#footer .contact-body .context ul li {
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 12px;
-}
-#footer .contact-body .context ul li i {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 5px;
-}
-#footer .contact-body .context .social_contact {
-  display: flex;
-  align-items: flex-end;
-  margin-top: 10px;
-}
-#footer .contact-body .context .social_contact li {
-  margin-right: 15px;
-}
-#footer .contact-body .context .social_contact li a i {
-  color: #fff;
-  font-size: 19px;
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-}
-#footer .contact-body .context .social_contact li a:hover i {
-  color: #dc3545;
-}
-#footer .contact-body .context-nav ul li i {
-  color: #dc3545;
-  font-size: 16px;
-  margin-right: 5px;
-}
-#footer .contact-body .context-nav ul li a {
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-  margin-bottom: 12px;
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-}
-#footer .contact-body .context-nav ul li a:hover {
-  color: #dc3545;
-  margin-left: 5px;
-}
-#footer .contact-body .statistic_info {
-  margin-top: 10px;
-}
-#footer .contact-body .statistic_info p {
-  font-size: 13px;
-  font-weight: 400;
-  color: #fff;
-  line-height: 22px;
-}
-#footer .contact-body .statistic_info p span {
-  color: #dc3545;
-  font-size: 14px;
-}
-#footer .contact-body .statistic_info p span i {
-  font-size: 12px;
-}
-#footer .contact-body form input {
-  padding: 5px;
-  width: 100%;
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: none;
-}
-#footer .contact-body form input:focus {
-  box-shadow: 0 0 0 0.25rem #dc3545;
-}
-#footer .contact-body form textarea {
-  width: 100%;
-  padding: 10px;
-  resize: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: none;
-}
-#footer .contact-body form textarea:focus {
-  box-shadow: 0 0 0 0.25rem #dc3545;
-}
-#footer .contact-body form button {
-  border: 1px solid transparent;
-  background: #dc3545;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  padding: 7px 12px;
-  border-radius: 25px;
-  text-transform: uppercase;
-  margin-top: 10px;
-  text-align: center;
-  float: right;
-  transition: all linear 0.5s;
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-}
-#footer .contact-body form button:hover {
-  color: #dc3545;
-  background: #fff;
-  border: 1px solid #dc3545;
-  margin-left: 5px;
-}
-#footer .copy_right {
-  text-align: center;
-  padding-top: 10px;
-}
-#footer .copy_right p {
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-}
-
-/* ==================  Footer Part End  ================== */
+/* ==================  Brasiguaio Content Part End  ================== */
 /* ==================  Brasiguaio Content Part Start  ================== */
 #annoucement .annousment_details {
   padding: 20px 0;
@@ -1045,121 +716,256 @@ body::after {
 }
 
 /* ==================  Transnationalism Content Part End  ================== */
-/* ==================  Credit Part Start  ================== */
-#credit .common_head p {
-  font-size: 15px;
-  font-weight: 400;
-  color: #333;
-  padding: 15px 60px;
+/* ==================  Footer Part Start  ================== */
+#footer .contact-top .common_head a img {
+  width: 150px;
+  height: 80px;
 }
-#credit .credit_content {
+#footer .contact-body .common_head {
+  text-align: left;
+}
+#footer .contact-body .common_head h6 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 0;
+  position: relative;
+}
+#footer .contact-body .common_head h6::after {
+  position: absolute;
+  content: "";
+  bottom: 8px;
+  left: 1px;
+  width: 80%;
+  height: 2px;
+  background: #fff;
+}
+#footer .contact-body .context ul li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 12px;
+}
+#footer .contact-body .context ul li i {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 5px;
+}
+#footer .contact-body .context .social_contact {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+#footer .contact-body .context .social_contact li {
+  margin-right: 15px;
+}
+#footer .contact-body .context .social_contact li a i {
+  color: #fff;
+  font-size: 19px;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#footer .contact-body .context .social_contact li a:hover i {
+  color: #dc3545;
+}
+#footer .contact-body .context-nav ul li i {
+  color: #dc3545;
+  font-size: 16px;
+  margin-right: 5px;
+}
+#footer .contact-body .context-nav ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 12px;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#footer .contact-body .context-nav ul li a:hover {
+  color: #dc3545;
+  margin-left: 5px;
+}
+#footer .contact-body .statistic_info {
+  margin-top: 10px;
+}
+#footer .contact-body .statistic_info p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 22px;
+}
+#footer .contact-body .statistic_info p span {
+  color: #dc3545;
+  font-size: 14px;
+}
+#footer .contact-body .statistic_info p span i {
+  font-size: 12px;
+}
+#footer .contact-body form input {
+  padding: 5px;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+}
+#footer .contact-body form input:focus {
+  box-shadow: 0 0 0 0.25rem #dc3545;
+}
+#footer .contact-body form textarea {
+  width: 100%;
+  padding: 10px;
+  resize: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: none;
+}
+#footer .contact-body form textarea:focus {
+  box-shadow: 0 0 0 0.25rem #dc3545;
+}
+#footer .contact-body form button {
+  border: 1px solid transparent;
+  background: #dc3545;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-align: center;
+  float: right;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#footer .contact-body form button:hover {
+  color: #dc3545;
+  background: #fff;
+  border: 1px solid #dc3545;
+  margin-left: 5px;
+}
+#footer .copy_right {
+  text-align: center;
+  padding-top: 10px;
+}
+#footer .copy_right p {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* ==================  Footer Part End  ================== */
+/* ==================  acknowledgments Part Start  ================== */
+#about_us .about_content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  line-height: 24px;
+  text-align: center;
+  opacity: 80%;
+  transform: scale(0.9);
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#about_us .about_content p span {
+  display: block;
+  margin: 4px 0;
+}
+#about_us .about_content p:hover {
+  opacity: 100%;
+  transform: scale(1);
+}
+
+/* ==================  acknowledgments Part End  ================== */
+/* ==================  Team  Content Part Start  ================== */
+#team .team_card .teamer_image {
+  position: relative;
+  overflow: hidden;
+}
+#team .team_card .teamer_image .ovrly {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  transform: translateX(80px);
+  transition: all linear 0.3s;
+}
+#team .team_card .teamer_image .ovrly ul {
+  padding-top: 30px;
+}
+#team .team_card .teamer_image .ovrly ul li {
   text-align: center;
 }
-#credit .credit_content ul li h3 {
+#team .team_card .teamer_image .ovrly ul li a {
+  font-size: 20px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-bottom: 20px;
+  transition: all linear 0.2s;
+}
+#team .team_card .teamer_info {
+  text-align: center;
+}
+#team .team_card .teamer_info h4 {
   font-size: 18px;
   font-weight: 700;
   color: #333;
-  font-family: "digital-serial-bold", sans-serif;
-  padding: 10px 0;
+  padding: 3px 0;
 }
-#credit .credit_content ul li h4 {
-  font-size: 16px;
-  font-weight: 700;
-  color: #666;
-  padding: 10px 0;
+#team .team_card .teamer_info span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  padding: 3px 0;
+  text-transform: uppercase;
 }
-#credit .credit_content ul li p {
+#team .team_card .teamer_info p {
   font-size: 14px;
   font-weight: 400;
-  color: #666;
-  padding: 7px 0;
+  color: #000;
+  padding: 3px 0;
 }
-
-/* ==================  Credit Part End  ================== */
-/* ============================= Producer Part Start ================================= */
-#producer .producer_part .producer_img {
-  padding-bottom: 30px;
+#team .team_card:hover {
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
 }
-#producer .producer_part .producer_img img {
-  border-radius: 50%;
+#team .team_card:hover .teamer_image .ovrly {
+  transform: translateX(0px);
 }
-#producer .producer_part .producer_txt {
+#team .team_card:hover .teamer_image .ovrly ul li a:hover {
   background: #dc3545;
-  padding: 20px;
-  position: relative;
-  border-radius: 5px;
+  border-color: #dc3545;
 }
-#producer .producer_part .producer_txt .shape_testi {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  border-bottom: 25px solid #dc3545;
-  border-top: 25px solid transparent;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  transform: translateX(-50%);
-}
-#producer .producer_part .producer_txt h2 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #fff;
-  padding-bottom: 5px;
-}
-#producer .producer_part .producer_txt h4 {
-  font-size: 16px;
-  font-weight: 300;
-  color: #fff;
+#team .team_card:hover .teamer_info h4 {
+  color: #dc3545;
 }
 
-/* ============================= Producer Part End ================================= */
-/* ==================  Festivals and Awards Part Start  ================== */
-#festivals_awards .common_head p {
-  font-size: 16px;
-  font-weight: 500;
-  color: #666;
-  padding-top: 10px;
-}
-#festivals_awards .award_part {
-  width: 100%;
-  position: relative;
-}
-#festivals_awards .award_part h3 {
-  font-size: 24px;
-  font-weight: 600;
-  color: #dc3545;
-  text-transform: uppercase;
-  font-style: italic;
-  text-align: center;
-  padding-bottom: 25px;
-}
-#festivals_awards .award_part ul {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-#festivals_awards .award_part ul li {
-  width: 22.22%;
-  height: 200px;
-  margin: 0 15px;
-}
-#festivals_awards .award_part ul li img {
-  max-width: 100%;
-  width: 100%;
-}
-#festivals_awards .award_part .award_next,
-#festivals_awards .award_part .award_prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #dc3545;
-  font-size: 25px;
-  z-index: 9;
-}
-#festivals_awards .award_part .award_next {
-  right: -10px;
-}
-#festivals_awards .award_part .award_prev {
-  left: -10px;
-}
-
-/* ==================  Festivals and Awards Part End  ================== *//*# sourceMappingURL=style.css.map */
+/* ==================  Team  Content Part End  ================== *//*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+@import '../mixins/mixins';
+
+/* ==================  acknowledgments Part Start  ================== */
+#about_us{
+    .about_content{
+        p{
+            @include text(18px, 500, #000);
+            line-height: 24px;
+            text-align: center;
+            opacity: 80%;
+            transform: scale(0.9);
+            @include transition();
+            span{
+                display: block;
+                margin: 4px 0;
+            }
+            &:hover{
+                opacity: 100%;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+/* ==================  acknowledgments Part End  ================== */
