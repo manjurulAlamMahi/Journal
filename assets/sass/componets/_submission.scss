@@ -1,0 +1,74 @@
+@import "../mixins/mixins";
+
+/* ==================  Brasiguaio Content Part Start  ================== */
+#submission{
+    .alert{
+        text-align: center;
+        p{
+            a{
+                color: $hover;
+                padding: 0 5px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+    .submission_content{
+        .submission_head{
+            h4{
+                @include text(18px,600,#000);
+                position: relative;
+                display: inline-block;
+                margin-bottom: 10px;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 95%;
+                    height: 2px;
+                    background: $hover;
+                    bottom: -3px;
+                    left: 0;
+                }
+            }
+            p{
+                @include text(15px,400,#000);
+            }
+        }
+        .submission_body{
+            padding: 20px 0;
+            ul{
+                li{
+                    margin-bottom: 25px;
+                    @include text(15px,400,#333);
+                    position: relative;
+                    i{
+                        color: $hover;
+                    }
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        bottom: -15px;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background: rgba(51, 51, 51, 0.4);
+                    }
+                    &:last-child{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            P{
+                @include text(15px,400,#333);
+                line-height: 24px;
+                span{
+                    display: block;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+/* ==================  Brasiguaio Content Part End  ================== */

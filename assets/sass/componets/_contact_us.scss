@@ -1,0 +1,148 @@
+@import '../mixins/mixins';
+
+/* ==================  Contact Us Part Start  ================== */
+#contact{
+    .contact_content{
+        h4{
+            @include text(14px, 600, #000);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        p{
+            @include text(16px, 400, #333);
+            margin-bottom: 15px;
+        }
+        .faq{
+            padding-bottom: 20px;
+            h4{
+                font-size: 22px;
+            }
+            .market_collapse {
+                padding: 5px 0;
+
+                .market_collapse_button {
+                    a {
+                        @include text(18px, 600, $hover);
+                        background: transparent;
+                        border: none;
+                        display: block;
+                        border-bottom: 1px solid transparent;
+                        text-align: left;
+                        padding-left: 15px;
+                        position: relative;
+
+                        &:focus {
+                            box-shadow: none;
+                        }
+
+                        &::after {
+                            @include af_bf();
+                            background: #333;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 20px;
+                            width: 1px;
+                            height: 10px;
+                            transition: transform .3s;
+                        }
+
+                        &::before {
+                            @include af_bf();
+                            background: #333;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 15px;
+                            width: 11px;
+                            height: 1px;
+                            display: none;
+                            transition: transform .3s;
+                        }
+
+                        &.collapsed {
+                            color: #333 !important;
+                            border-bottom: 1px solid #eee;
+
+                            &::after {
+                                transform: translateY(-50%) rotate(180deg);
+                            }
+
+                            &::before {
+                                display: block;
+                                transform: translateY(-50%) rotate(180deg);
+                            }
+                        }
+                    }
+                }
+
+                .market_collapse_content {
+                    p {
+                        @include text(12px, 400, #666);
+                        line-height: 1.86;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact_msg{
+        text-align: right;
+        form{
+            input{
+                @include text(16px, 400, #333);
+                padding: 10px 15px;
+                margin: 10px 0;
+                &:focus{
+                    box-shadow: none !important;
+                    border-color: $hover !important;
+                }
+            }
+            textarea{
+                resize: none;
+                margin-bottom: 20px;
+                padding: 10px 15px;
+                &:focus{
+                    box-shadow: none !important;
+                    border-color: $hover !important;
+                }
+            }
+            button{
+                i{
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    .social{
+        text-align: right;
+        margin-top: 20px;
+        h4{
+            @include text(12px, 600, #000);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        ul{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-top: 10px;
+            li{
+                margin-left: 15px;
+                a{
+                    i{
+                        color: $hover;
+                        font-size: 16px;
+                        opacity: 80%;
+                        @include transition();
+                    }
+                    &:hover{
+                        i{
+                            opacity: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ==================  Contact Us Part End  ================== */

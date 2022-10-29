@@ -76,4 +76,75 @@
     }
 }
 
+#otherteam{
+    .team_card{
+        width: 60%;
+        @include transition();
+        .otherteamer_info{
+            .details{
+                h4{
+                    @include text(15px,600,#333);
+                    margin-bottom: 5px;
+                    @include transition();
+                }
+                span{
+                    @include text(14px,400,#333);
+                    margin-bottom: 5px;
+                }
+                p{
+                    @include text(15px,400,#000);
+                    margin-bottom: 5px; 
+                    width: 500px;
+                }
+            }
+            .social{
+                display: flex;
+                justify-content: end;
+                transform: scale(0);
+                @include transition();
+                li{
+                    margin-left: 25px;
+                    position: relative;
+                    a{
+                        color: #333;
+                        @include transition();
+                        &:hover{
+                            color: $hover;
+                        }
+                    }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 1px;
+                        height: 20px;
+                        top: 2px;
+                        left: -12px;
+                        background: #333;
+                    }
+                    &:first-child{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            width: 100%;
+            box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+            .otherteamer_info{
+                .details{
+                    h4{
+                        color: $hover;
+                    }
+                }
+                .social{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
 /* ==================  Team  Content Part End  ================== */

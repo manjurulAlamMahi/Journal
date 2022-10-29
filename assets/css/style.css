@@ -161,6 +161,22 @@ body::after {
     transform: translateX(100%);
   }
 }
+@-webkit-keyframes topTobottom {
+  from {
+    transform: translateY(-75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes topTobottom {
+  from {
+    transform: translateY(-75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 /* ======================== Heading css Start =============================== */
 #heading_part .container {
   background: #333;
@@ -968,4 +984,545 @@ body::after {
   color: #dc3545;
 }
 
-/* ==================  Team  Content Part End  ================== *//*# sourceMappingURL=style.css.map */
+#otherteam .team_card {
+  width: 60%;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#otherteam .team_card .otherteamer_info .details h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#otherteam .team_card .otherteamer_info .details span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 5px;
+}
+#otherteam .team_card .otherteamer_info .details p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 5px;
+  width: 500px;
+}
+#otherteam .team_card .otherteamer_info .social {
+  display: flex;
+  justify-content: end;
+  transform: scale(0);
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#otherteam .team_card .otherteamer_info .social li {
+  margin-left: 25px;
+  position: relative;
+}
+#otherteam .team_card .otherteamer_info .social li a {
+  color: #333;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#otherteam .team_card .otherteamer_info .social li a:hover {
+  color: #dc3545;
+}
+#otherteam .team_card .otherteamer_info .social li::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 20px;
+  top: 2px;
+  left: -12px;
+  background: #333;
+}
+#otherteam .team_card .otherteamer_info .social li:first-child::after {
+  display: none;
+}
+#otherteam .team_card:hover {
+  width: 100%;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.2);
+}
+#otherteam .team_card:hover .otherteamer_info .details h4 {
+  color: #dc3545;
+}
+#otherteam .team_card:hover .otherteamer_info .social {
+  transform: scale(1);
+}
+
+/* ==================  Team  Content Part End  ================== */
+/* ==================  acknowledgments Part Start  ================== */
+#annoucements .annoucement_card_box .annoucement_content {
+  position: relative;
+}
+#annoucements .annoucement_card_box .annoucement_content::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  bottom: -12px;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.125);
+  transform: translateX(-50%);
+}
+#annoucements .annoucement_card_box .annoucement_content:last-child {
+  margin-bottom: 0 !important;
+}
+#annoucements .annoucement_card_box .annoucement_content:last-child::after {
+  display: none;
+}
+#annoucements .annoucement_card_box .annoucement_content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+#annoucements .annoucement_card_box .annoucement_content span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+#annoucements .annoucement_card_box .annoucement_content span i {
+  color: #dc3545;
+  margin-right: 5px;
+}
+#annoucements .annoucement_card_box .annoucement_content p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  padding: 5px 40px 0 0;
+  line-height: 24px;
+}
+#annoucements .annoucement_card_box .annoucement_content a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #dc3545;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+#annoucements .annoucement_card_box .annoucement_content a i {
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#annoucements .annoucement_card_box .annoucement_content a:hover {
+  text-decoration: underline;
+}
+#annoucements .annoucement_card_box .annoucement_content a:hover i {
+  margin-left: 5px;
+}
+#annoucements .paginate .Page .pagination {
+  margin: -3px;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0;
+}
+#annoucements .paginate .Page .pagination .page-item {
+  padding: 3px;
+  float: left;
+}
+#annoucements .paginate .Page .pagination .page-item .page-link {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 14px;
+  border-radius: 0;
+  align-items: center;
+  color: #252525;
+  justify-content: center;
+  border: 1px solid #eeeeee;
+  font-weight: 500;
+}
+#annoucements .paginate .Page .pagination .page-item.active .page-link {
+  color: #ffffff;
+  border-color: #dc3545;
+  background-color: #dc3545;
+}
+#annoucements .accoucement_filter_fix {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  transition: ease 0.3s;
+  -webkit-animation: topTobottom 0.5s;
+          animation: topTobottom 0.5s;
+}
+#annoucements .accoucement_filter h6 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 6px;
+}
+#annoucements .accoucement_filter label {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+#annoucements .accoucement_filter .input_group {
+  position: relative;
+  display: flex;
+  justify-content: end;
+}
+#annoucements .accoucement_filter .input_group span {
+  border: 1px solid rgba(51, 51, 51, 0.6);
+  padding: 6px 12px;
+  border-right: none !important;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  color: #dc3545;
+}
+#annoucements .accoucement_filter .input_group input {
+  width: 85%;
+  border: 1px solid rgba(51, 51, 51, 0.6) !important;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+  padding: 7px;
+  text-align: left;
+  border-left: none !important;
+  text-align: right;
+}
+
+/* ==================  acknowledgments Part End  ================== */
+/* ==================  All Issue Part Start  ================== */
+#all_issue .all_issue_card_box .issue_content {
+  display: flex;
+}
+#all_issue .all_issue_card_box .issue_content .issue_img {
+  width: 75px;
+  margin: 0 25px 0 0;
+}
+#all_issue .all_issue_card_box .issue_content .issue_img img {
+  width: 100%;
+  max-width: 100%;
+}
+#all_issue .all_issue_card_box .issue_content .issue_text {
+  align-self: center;
+}
+#all_issue .all_issue_card_box .issue_content .issue_text a {
+  display: block;
+}
+#all_issue .all_issue_card_box .issue_content .issue_text a h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #dc3545;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+#all_issue .all_issue_card_box .issue_content .issue_text span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+#all_issue .all_issue_card_box .issue_content .issue_text span i {
+  color: #dc3545;
+  margin-right: 5px;
+}
+#all_issue .all_issue_card_box .issue_content .issue_text p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  padding: 5px 40px 0 0;
+  line-height: 24px;
+}
+#all_issue .paginate .Page .pagination {
+  margin: -3px;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0;
+}
+#all_issue .paginate .Page .pagination .page-item {
+  padding: 3px;
+  float: left;
+}
+#all_issue .paginate .Page .pagination .page-item .page-link {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  font-size: 14px;
+  border-radius: 0;
+  align-items: center;
+  color: #252525;
+  justify-content: center;
+  border: 1px solid #eeeeee;
+  font-weight: 500;
+}
+#all_issue .paginate .Page .pagination .page-item.active .page-link {
+  color: #ffffff;
+  border-color: #dc3545;
+  background-color: #dc3545;
+}
+#all_issue .issue_filter_fix {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 75px;
+  width: 100%;
+  transition: ease 0.3s;
+  -webkit-animation: topTobottom 0.5s;
+          animation: topTobottom 0.5s;
+}
+#all_issue .issue_filter h6 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 6px;
+}
+#all_issue .issue_filter label {
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+#all_issue .issue_filter .form-select {
+  padding: 0.45rem 2.7rem 0.45rem 0.9rem;
+  padding-top: 0.45rem;
+  padding-bottom: 0.45rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #7d8a91;
+  border: 1px solid #7d8a91;
+  border-radius: 0.25rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+#all_issue .issue_filter .form-select:focus {
+  box-shadow: none;
+  border-color: #dc3545;
+}
+
+/* ==================  All Issue Part End  ================== */
+/* ==================  Brasiguaio Content Part Start  ================== */
+#submission .alert {
+  text-align: center;
+}
+#submission .alert p a {
+  color: #dc3545;
+  padding: 0 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#submission .submission_content .submission_head h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+#submission .submission_content .submission_head h4::after {
+  position: absolute;
+  content: "";
+  width: 95%;
+  height: 2px;
+  background: #dc3545;
+  bottom: -3px;
+  left: 0;
+}
+#submission .submission_content .submission_head p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+}
+#submission .submission_content .submission_body {
+  padding: 20px 0;
+}
+#submission .submission_content .submission_body ul li {
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  position: relative;
+}
+#submission .submission_content .submission_body ul li i {
+  color: #dc3545;
+}
+#submission .submission_content .submission_body ul li::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgba(51, 51, 51, 0.4);
+}
+#submission .submission_content .submission_body ul li:last-child::after {
+  display: none;
+}
+#submission .submission_content .submission_body P {
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+  line-height: 24px;
+}
+#submission .submission_content .submission_body P span {
+  display: block;
+  padding: 5px;
+}
+
+/* ==================  Brasiguaio Content Part End  ================== */
+/* ==================  Contact Us Part Start  ================== */
+#contact .contact_content h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#contact .contact_content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 15px;
+}
+#contact .contact_content .faq {
+  padding-bottom: 20px;
+}
+#contact .contact_content .faq h4 {
+  font-size: 22px;
+}
+#contact .contact_content .faq .market_collapse {
+  padding: 5px 0;
+}
+#contact .contact_content .faq .market_collapse .market_collapse_button a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #dc3545;
+  background: transparent;
+  border: none;
+  display: block;
+  border-bottom: 1px solid transparent;
+  text-align: left;
+  padding-left: 15px;
+  position: relative;
+}
+#contact .contact_content .faq .market_collapse .market_collapse_button a:focus {
+  box-shadow: none;
+}
+#contact .contact_content .faq .market_collapse .market_collapse_button a::after {
+  position: absolute;
+  content: "";
+  background: #333;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 1px;
+  height: 10px;
+  transition: transform 0.3s;
+}
+#contact .contact_content .faq .market_collapse .market_collapse_button a::before {
+  position: absolute;
+  content: "";
+  background: #333;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 11px;
+  height: 1px;
+  display: none;
+  transition: transform 0.3s;
+}
+#contact .contact_content .faq .market_collapse .market_collapse_button a.collapsed {
+  color: #333 !important;
+  border-bottom: 1px solid #eee;
+}
+#contact .contact_content .faq .market_collapse .market_collapse_button a.collapsed::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+#contact .contact_content .faq .market_collapse .market_collapse_button a.collapsed::before {
+  display: block;
+  transform: translateY(-50%) rotate(180deg);
+}
+#contact .contact_content .faq .market_collapse .market_collapse_content p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.86;
+  padding: 10px 20px;
+}
+#contact .contact_msg {
+  text-align: right;
+}
+#contact .contact_msg form input {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  padding: 10px 15px;
+  margin: 10px 0;
+}
+#contact .contact_msg form input:focus {
+  box-shadow: none !important;
+  border-color: #dc3545 !important;
+}
+#contact .contact_msg form textarea {
+  resize: none;
+  margin-bottom: 20px;
+  padding: 10px 15px;
+}
+#contact .contact_msg form textarea:focus {
+  box-shadow: none !important;
+  border-color: #dc3545 !important;
+}
+#contact .contact_msg form button i {
+  padding-left: 5px;
+}
+#contact .social {
+  text-align: right;
+  margin-top: 20px;
+}
+#contact .social h4 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+#contact .social ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+#contact .social ul li {
+  margin-left: 15px;
+}
+#contact .social ul li a i {
+  color: #dc3545;
+  font-size: 16px;
+  opacity: 80%;
+  transition: all linear 0.5s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+#contact .social ul li a:hover i {
+  opacity: 100%;
+}
+
+/* ==================  Contact Us Part End  ================== *//*# sourceMappingURL=style.css.map */

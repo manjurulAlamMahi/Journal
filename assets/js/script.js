@@ -21,34 +21,6 @@ $(function () {
 
   $('.venobox').venobox();
 
-  // Festival Slider
-
-  $('.award_slider').slick({
-    infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: true,
-    nextArrow: '<i class="fas fa-chevron-circle-right award_next"></i>',
-    prevArrow: '<i class="fas fa-chevron-circle-left award_prev"></i>',
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-
   // Bact to Top
 
   $('.backtotop').click(function () {
@@ -80,46 +52,66 @@ $(function () {
 
   // Slider 
 
+  $('.annousment_details_carousel').slick({
+      dots: false,
+      arrows: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      asNavFor: '.annousment_details_carousel_nav'
+  });
+  $('.annousment_details_carousel_nav').slick({
+      dots: false,
+      arrows: false,
+      vertical: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      verticalSwiping: true,
+      asNavFor: '.annousment_details_carousel',
+      responsive: [
+          {
+              breakpoint: 376,
+              settings: {
+                  slidesToShow: 2
+              }
+          },
+          {
+              breakpoint: 426,
+              settings: {
+                  slidesToShow: 3
+              }
+          },
+          {
+              breakpoint: 576,
+              settings: {
+                  slidesToShow: 4
+              }
+          }
+      ]
+  });
 
+  // Fixed Content 
 
-$('.annousment_details_carousel').slick({
-    dots: false,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    asNavFor: '.annousment_details_carousel_nav'
-});
-$('.annousment_details_carousel_nav').slick({
-    dots: false,
-    arrows: false,
-    vertical: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    focusOnSelect: true,
-    verticalSwiping: true,
-    asNavFor: '.annousment_details_carousel',
-    responsive: [
-        {
-            breakpoint: 376,
-            settings: {
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 426,
-            settings: {
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 4
-            }
-        }
-    ]
-});
+  var offset = $('.pixel_count').offset().top;
+
+  $(window).on('scroll', function () {
+      var annc_right = $(this).scrollTop();
+      if (annc_right > offset) {
+          $('.accoucement_filter').addClass('accoucement_filter_fix');
+      } else {
+          $('.accoucement_filter').removeClass('accoucement_filter_fix');
+      }
+  });
+
+  $(window).on('scroll', function () {
+      var is_right = $(this).scrollTop();
+      if (is_right > offset) {
+          $('.issue_filter').addClass('issue_filter_fix');
+      } else {
+          $('.issue_filter').removeClass('issue_filter_fix');
+      }
+  });
 
 
 

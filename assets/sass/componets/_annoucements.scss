@@ -1,0 +1,144 @@
+@import '../mixins/mixins';
+
+/* ==================  acknowledgments Part Start  ================== */
+#annoucements{
+    .annoucement_card_box{
+        .annoucement_content{
+            position: relative;
+            &::after{
+                position: absolute;
+                content: "";
+                left: 50%;
+                bottom: -12px;
+                width: 100%;
+                height: 1px;
+                background: rgba(0,0,0,.125);
+                transform: translateX(-50%);
+            }
+            &:last-child{
+                &::after{
+                    display: none;
+                }
+                margin-bottom: 0 !important;
+            }
+            h4{
+                @include text(20px,600,#000);
+                padding: 5px 0;
+                text-transform: uppercase;
+            }
+            span{
+                @include text(15px,400,#333);
+                i{
+                    color: $hover;
+                    margin-right: 5px;
+                }
+            }
+            p{
+                @include text(14px,400,#000);
+                padding: 5px 40px 0 0;
+                line-height: 24px;
+            }
+            a{
+                @include text(16px,500,$hover);
+                text-transform: uppercase;
+                margin: 5px 0;
+                i{
+                    @include transition();
+                }
+                &:hover{
+                    text-decoration: underline;
+                    i{
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .paginate{
+        .Page{
+            .pagination{
+                margin: -3px;
+                list-style: none;
+                overflow: hidden;
+                padding-left: 0;
+                .page-item{
+                    padding: 3px;
+                    float: left;
+                    .page-link{
+                        min-width: 40px;
+                        height: 40px;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        font-size: 14px;
+                        border-radius: 0;
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        color: #252525;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        border: 1px solid #eeeeee;
+                        font-weight: 500;
+                    }
+                    &.active{
+                        .page-link{
+                            color: #ffffff;
+                            border-color: $hover;
+                            background-color: $hover;
+                        }
+                    } 
+                }
+            } 
+        } 
+    }
+    .accoucement_filter_fix{
+        position: sticky;
+        left: 0;
+        top: 75px;
+        width: 100%;
+        transition: ease .3s;
+        animation: topTobottom .5s;
+    }
+    .accoucement_filter{
+        h6{
+            font-size: 15px;
+            font-weight: 600;
+            color: #333;
+            margin-top: 6px;
+        }
+        label{
+            display: block;
+            text-align: right;
+            @include text(14px,300,#000);
+        }
+        .input_group{
+            position: relative;
+            display: flex;
+            justify-content: end;
+            span{
+                border: 1px solid rgba(51, 51, 51, 0.6);
+                padding: 6px 12px;
+                border-right: none !important;
+                font-size: 15px;
+                position: absolute;
+                top: 0;
+                left: 8px;
+                color: $hover;
+            }
+            input{
+                width: 85%;
+                border: 1px solid rgba(51, 51, 51, 0.6) !important;
+                @include text(14px,300,#000);
+                padding: 7px;
+                text-align: left;
+                border-left: none !important;
+                text-align: right;
+            }
+        }
+        
+    }
+}
+/* ==================  acknowledgments Part End  ================== */
