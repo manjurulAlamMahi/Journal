@@ -1187,7 +1187,7 @@ body::after {
   border: 1px solid rgba(51, 51, 51, 0.6);
   padding: 6px 12px;
   border-right: none !important;
-  font-size: 15px;
+  font-size: 16px;
   position: absolute;
   top: 0;
   left: 8px;
@@ -1203,6 +1203,7 @@ body::after {
   text-align: left;
   border-left: none !important;
   text-align: right;
+  height: 38px;
 }
 
 /* ==================  acknowledgments Part End  ================== */
